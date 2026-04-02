@@ -112,6 +112,7 @@ body{
         <h5><?php echo $row['title']; ?></h5>
         <p><?php echo $row['description']; ?></p>
         <p><b>Date:</b> <?php echo $row['date']; ?></p>
+        <p><b>Time:</b> <?php echo date("h:i A", strtotime($row['time'])); ?></p>
         <p><b>Location:</b> <?php echo $row['location']; ?></p>
     </div>
 
