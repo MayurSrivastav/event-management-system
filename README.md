@@ -1,6 +1,6 @@
 # 🎉 Event Management System
 
-A web-based system built using PHP, MySQL, and Bootstrap.
+A web-based system built using HTML, CSS, PHP, MySQL, and Bootstrap.
 
 ## Features
 - User & Admin Login
@@ -10,6 +10,8 @@ A web-based system built using PHP, MySQL, and Bootstrap.
 - Admin Analytics
 
 ## Tech Stack
+- HTML
+- CSS
 - PHP
 - MySQL
 - Bootstrap
