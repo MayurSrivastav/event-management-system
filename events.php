@@ -45,8 +45,15 @@ body > *{
     flex-direction: column;
     justify-content: space-between;
     border-radius: 15px;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color:white;
+    border: 1px solid rgba(255,255,255,0.2);
     transition: 0.3s ease;
+}
+.card h5, .card p{
+    color:white;
 }
 
 /* Hover Effect */
@@ -108,6 +115,7 @@ body > *{
             <h5><?php echo $row['title']; ?></h5>
             <p><?php echo $row['description']; ?></p>
             <p><b>Date:</b> <?php echo $row['date']; ?></p>
+            <p><b>Time:</b> <?php echo date("h:i A", strtotime($row['time'])); ?></p>
             <p><b>Location:</b> <?php echo $row['location']; ?></p>
         </div>
 

@@ -48,12 +48,19 @@ body{
 /* 🔥 CARD FIX */
 .card{
     border-radius:15px;
-    background: rgba(255,255,255,0.95);
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color:white;
+    border: 1px solid rgba(255,255,255,0.2);
     transition: 0.3s;
     height: 100%;
-    overflow: hidden; /* 🔥 IMPORTANT */
+    overflow: hidden;
 }
 
+.card h5, .card p{
+    color:white;
+}
 .card:hover{
     transform: scale(1.02);
 }

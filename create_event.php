@@ -12,10 +12,11 @@ if(isset($_POST['create'])){
     $title = $_POST['title'];
     $desc = $_POST['description'];
     $date = $_POST['date'];
+    $time = $_POST['time'];
     $loc = $_POST['location'];
 
-    if($conn->query("INSERT INTO events(title,description,date,location)
-        VALUES('$title','$desc','$date','$loc')")){
+    if($conn->query("INSERT INTO events(title,description,date,time,location)
+        VALUES('$title','$desc','$date','$time','$loc')")){
         
         $success = true; // flag for popup
     }
@@ -82,6 +83,9 @@ body > *{
 
 <label><b>Date</b></label>
 <input type="date" name="date" class="form-control mb-3" required>
+
+<label><b>Time</b></label>
+<input type="time" name="time" class="form-control mb-3" required>
 
 <label><b>Location</b></label>
 <input type="text" name="location" class="form-control mb-3" placeholder="Enter event location" required>
